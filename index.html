@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Email Chat Widget Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/neo/dist/css/neo/neo.css" rel="stylesheet">
+</head>
+
+<body class="ta-layout neo-widget">
+    <div class="widget-buttons">
+        <button style="margin-right: 2vh;"
+            class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-chat"
+            aria-label="Chat" onclick="openModal('chat')"></button>
+        <!-- <button style="margin-right: 2vh;"
+            class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-email"
+            aria-label="Email" onclick="openModal('email')"></button>
+        <button
+            class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-social-integrations"
+            aria-label="Social Chat" onclick="openModal('social-chat')"></button> -->
+    </div>
+    <div id="widget-chat" class="widget-chat">
+        <div class="wc-title">
+            <div class="left">
+                <div class="wct-icon">
+                    <span id="wct-icon" class="neo-icon-settings"></span>
+                </div>
+                <div class="wct-left">
+                    <div id="wc-title"></div>
+                    <div id="account-container" class="account-no">Account No.: <span id="acc-no"></span></div>
+                </div>
+            </div>
+            <div class="close-btn">
+                <button id="min" style="margin-right: 1vh;"
+                    class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-screen-min"
+                    aria-label="Social Chat" onclick="minimize()"></button>
+                <button id="max" style="margin-right: 1vh;"
+                    class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-screen-max"
+                    aria-label="Social Chat" onclick="maximize()"></button>
+                <button class="neo-btn-circle neo-btn-circle-secondary neo-btn-circle-secondary--default neo-icon-close"
+                    aria-label="Social Chat" onclick="closeModal()"></button>
+            </div>
+        </div>
+        <div id="wc-chatspace" class="wc-chatspace">
+            <div id="chat-list" class="chat-lists">
+                <!-- <div class="chat-li right">
+                    <div class="cl-icon">
+                        <span id="cl-icon" class="neo-icon-agents"></span>
+                    </div>
+                    <div class="cl-message-container">
+                        <div class="cl-ml-title">
+                            <bold>Support TeleApps</bold> Date Time
+                        </div>
+                        <div class="cl-ml-message">Hi How can I help you?</div>
+                    </div>
+                </div>
+                <div class="chat-li">
+                    <div class="cl-icon">
+                        <span id="cl-icon" class="neo-icon-contact"></span>
+                    </div>
+                    <div class="cl-message-container">
+                        <div class="cl-ml-title">
+                            <bold>Sample Customer</bold> Date Time
+                        </div>
+                        <div class="cl-ml-message">Hi</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="message-container neo-form-control neo-input-icon">
+                <div class="neo-input-group">
+                    <div class="neo-input-icon__wrapper neo-input-editable__wrapper">
+                        <textarea class="neo-input" placeholder="Type your Message" type="text" id="message"
+                            rows="2"></textarea>
+                        <button
+                            class="neo-icon-end neo-btn-circle neo-btn-circle-tertiary neo-btn-circle-tertiary--info neo-icon-send"
+                            aria-label="Send Message" onclick="sendMessage()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/moment.js"></script>
+
+</html>

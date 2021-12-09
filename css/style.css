@@ -1,0 +1,137 @@
+.ta-layout .widget-buttons {
+    display: flex;
+}
+
+.ta-layout .widget-chat {
+    display: none;
+    flex-direction: column;
+    width: 70vh;
+    height: 75vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 8vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wc-title {
+    background-color: #34475c;
+    color: #ffffff;
+    position: relative;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wc-title .left {
+    display: flex;
+}
+
+.wc-title .wct-left {
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wct-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.wct-icon #wct-icon {
+    font-size: 30px;
+}
+
+#wc-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.account-no {
+    font-size: 12px;
+}
+
+.close-btn #max {
+    display: none;
+}
+
+.wc-chatspace {
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-lists {
+    height: 100%;
+    margin: 2vh;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+.chat-li {
+    display: flex;
+    margin-bottom: 1.5vh;
+    width: 100% !important;
+}
+
+.chat-li .cl-icon {
+    margin: 0 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-li .cl-icon img {
+    width: 50%;
+}
+
+.chat-li .cl-icon #cl-icon {
+    font-size: 45px;
+}
+
+.chat-li .cl-message-container {
+    width: 100%;
+}
+
+.chat-li .cl-message-container .cl-ml-title {
+    font-size: 11px;
+    text-align: left;
+}
+
+.chat-li .cl-message-container .cl-ml-message {
+    /* margin-right: 23%; */
+    background-color: #03a7df;
+    text-align: left;
+    display: flex;
+    border-radius: 3px;
+    padding: 5px;
+    color: #ffffff;
+    width: 77%;
+}
+
+.chat-li.right {
+    flex-direction: row-reverse;
+}
+
+.chat-li.right .cl-message-container .cl-ml-title {
+    font-size: 11px;
+    text-align: right;
+}
+
+.chat-li.right .cl-message-container .cl-ml-message {
+    margin-left: 23%;
+}
+
+.message-container {
+    margin: 0.5vh !important;
+    padding: .5vh;
+}
+
+.wc-title .close-btn {
+    display: flex;
+    padding: 1vh;
+}
